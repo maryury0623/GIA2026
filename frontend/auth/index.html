@@ -46,11 +46,11 @@
 <body>
 
   <main>
-    <img src="Imagenes/logo_previser.png" alt="Logo">
+    <img src="/GIA/Imagenes/logo_previser.png" alt="Logo">
     <h2>BIENVENIDO AL SISTEMA</h2>
     <h3>GIA (Gestión Inventario de Activos)</h3>
 
-    <form action="backend/auth/login.php" method="POST">
+    <form action="../../backend/auth/login.php" method="POST">
       <label for="usuario">Usuario</label>
       <input type="text" id="usuario" name="usuario" placeholder="Ingrese su Usuario" required>
 
@@ -58,8 +58,8 @@
       <input type="password" id="password" name="password" placeholder="Contraseña" required>
 
       <div class="acciones">
-        <a href="frontend/auth/recuperar.html">¿Olvidaste tu contraseña?</a>
-        <a href="frontend/auth/registro.html">REGÍSTRATE</a>
+        <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+        <a href="registro.html">REGÍSTRATE</a>
       </div>
 
       <button type="submit">Ingresar</button>

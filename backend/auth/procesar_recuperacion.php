@@ -26,9 +26,9 @@ if ($resultado->num_rows === 1) {
     $stmt->bind_param("ss", $nueva_clave_hash, $usuario);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Contraseña actualizada correctamente.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Contraseña actualizada correctamente.'); window.location.href='/GIA/index.html';</script>";
     } else {
-        echo "<script>alert('Error al actualizar la contraseña'); window.location.href='recuperar.html';</script>";
+        echo "<script>alert('Error al actualizar la contraseña'); window.location.href='/frontend/recuperar.html';</script>";
     }
 } else {
     echo "<script>alert('Usuario no encontrado'); window.location.href='recuperar.html';</script>";

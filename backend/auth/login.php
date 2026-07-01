@@ -19,12 +19,12 @@ if ($resultado->num_rows === 1) {
     // Verificar contraseña
     if (password_verify($clave, $fila['contraseña'])) {
         $_SESSION['usuario'] = $usuario;
-        header("Location: panel.php");
+        header("Location: /GIA/frontend/panel/panel.php");
         exit();
     } else {
-        echo "<script>alert('Contraseña incorrecta'); window.location.href='index.html';</script>";
+        echo "<script>alert('Contraseña incorrecta'); window.location.href='/GIA/index.html';</script>";
     }
 } else {
-    echo "<script>alert('Usuario no encontrado'); window.location.href='index.html';</script>";
+    echo "<script>alert('Usuario no encontrado'); window.location.href='/GIA/index.html';</script>";
 }
 ?>

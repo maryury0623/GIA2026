@@ -85,18 +85,18 @@ if (!isset($_SESSION['usuario'])) {
   <main>
     <h1>MENÚ PRINCIPAL</h1>
     <p>Bienvenido, <strong><?php echo $_SESSION['usuario']; ?></strong></p>
-    <img src="Imagenes/logo_previser.png" alt="Logo">
+    <img src="/GIA/Imagenes/logo_previser.png">
 
     <div class="menu">
-      <a href="modulo_asignacion.html" class="modulo">MÓDULO DE ASIGNACIÓN</a>
-      <a href="modulo_facturacion.html" class="modulo">MÓDULO DE FACTURACIÓN</a>
+      <a href="/GIA/frontend/modulos/modulo_asignacion.html" class="modulo">MÓDULO DE ASIGNACIÓN</a>
+      <a href="/GIA/frontend/modulos/modulo_facturacion.html" class="modulo">MÓDULO DE FACTURACIÓN</a>
       <a href="modulo_creacion.html" class="modulo">MÓDULO DE CREACIÓN</a>
       <a href="modulo_bodegas.html" class="modulo">MÓDULO DE BODEGAS</a>
       <a href="modulo_activos.html" class="modulo">MÓDULO DE ACTIVOS</a>
     </div>
  
 
-    <a class="salir" href="logout.php">Cerrar sesión</a>
+    <a class="salir" href="../../backend/auth/logout.php">Cerrar sesión</a>
   </main>
 
 </body>
